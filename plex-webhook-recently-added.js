@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require('dotenv').load();
 const info = require('./package.json');
 const request = require('request');
