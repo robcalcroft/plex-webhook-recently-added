@@ -1,5 +1,5 @@
 #plex-webhook-recently-added
-> Runs a webhook with recently added items from your Plex server
+> :link: Runs webhooks with recently added items from your Plex server
 
 ##Install
 1. Clone the repo
