@@ -40,7 +40,7 @@ request.post({
   },
 }, (loginError, loginResult, login) => {
   if (loginError) {
-    return debug(`${new Date()}`, `Error retrieving token, status ${loginResult.statusCode} - `, loginError);
+    return debug(`${new Date()}`, `Error retrieving token, status ${loginResult && loginResult.statusCode} - `, loginError);
   }
 
   const user = JSON.parse(login).user;
@@ -58,7 +58,7 @@ request.post({
     },
   }, (recentlyAddedError, recentlyAddedResult, recentlyAdded) => {
     if (recentlyAddedError) {
-      return debug(`${new Date()}`, `Error getting recently added, status ${recentlyAddedResult.statusCode} - `, recentlyAddedError);
+      return debug(`${new Date()}`, `Error getting recently added, status ${recentlyAddedResult && recentlyAddedResult.statusCode} - `, recentlyAddedError);
     }
 
     const items = JSON.parse(recentlyAdded).MediaContainer.Metadata;
