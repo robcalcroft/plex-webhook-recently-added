@@ -21,4 +21,4 @@
 ```
 
 ##Telegram Bot
-A prime example for using these webhooks is in a Telegram Bot, you can use https://gist.github.com/robcalcroft/4def2535ba47fa37bbd74a5901c92e80 to run your own one that will notify users once they have run `/start` in Telegram.
+A prime example for using these webhooks is in a Telegram Bot, you can use https://gist.github.com/robcalcroft/4aee25941db5b48d641348076d5369d8 to run your own one that will notify users once they have run `/start` in Telegram.
