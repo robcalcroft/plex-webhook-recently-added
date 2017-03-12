@@ -76,6 +76,10 @@ request.post({
       return name;
     });
 
+    if (process.env.SILENT === '1') {
+      return console.log(`${new Date()}`, 'Body: ', formattedItems);
+    }    
+
     return JSON.parse(process.env.WEBHOOKS).forEach((webhook) => {
       debug(`${new Date()}`, `Running webhook ${webhook}`);
       request.post({
