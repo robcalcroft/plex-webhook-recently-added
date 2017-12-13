@@ -16,7 +16,7 @@
   "Movie Name Here 3",
   "TV Show Name Here Season 1",
   "TV Show Name Here Season 2",
-  "TV Show Name Here Season 3",
+  "TV Show Name Here Season 3"
 ]
 ```
 
